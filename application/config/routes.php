@@ -47,8 +47,74 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | controller and method URI segments.
 |
 | Examples:	my-controller/index	-> my_controller/index
-|		my-controller/my-method	-> my_controller/my_method
+|		my-controller/my-method	-> my_controller/my_method sessioncontrol
 */
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'Login';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+//Login 
+$route['login'] = 'login';
+
+//Dashboard
+$route['dashboard'] = 'dashboard';
+$route['inicio'] = 'dashboard';
+
+//Usuarios 
+$route['usuarios'] = 'usuarios';
+$route['usuarios/crear'] = 'usuarios/crear';
+//$route['link'] = 'clase/metodo';
+
+//Campañas
+$route['dinamicas'] = 'dinamicas';
+$route['dinamicas/crear'] = 'dinamicas/crear';
+
+//reportes
+$route['reportes'] = 'reportes';
+$route['reportes/crear'] = 'reportes/crear';
+
+/*---------Vistas Configuraciones ------------ */
+
+//aceleradores
+$route['aceleradores'] = 'aceleradores';
+$route['aceleradores/crear'] = 'aceleradores/crear';
+
+//logros
+$route['logros'] = 'logros';
+$route['logros/crear'] = 'logros/crear';
+
+//paises
+$route['paises'] = 'paises';
+$route['paises/crear'] = 'paises/crear';
+
+//premios
+$route['premios'] = 'premios';
+$route['premios/crear'] = 'premios/crear';
+
+//regiones
+$route['regiones'] = 'regiones';
+$route['regiones/crear'] = 'regiones/crear';
+
+//sponsors
+$route['sponsors'] = 'sponsors';
+$route['sponsors/crear'] = 'sponsors/crear';
+
+//sucursales
+$route['sucursales'] = 'sucursales';
+$route['sucursales/crear'] = 'sucursales/crear';
+
+//tematicas
+$route['tematicas'] = 'tematicas';
+$route['tematicas/crear'] = 'tematicas/crear';
+
+//vendedores
+$route['vendedores'] = 'vendedores';
+$route['vendedores/crear'] = 'vendedores/crear';
+
+
+
+
+
+
+
+
